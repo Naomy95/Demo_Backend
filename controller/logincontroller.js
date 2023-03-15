@@ -1,7 +1,7 @@
-const jwt = require("jsonwebtoken");
-const secretKey = "secetKey";
+// const jwt = require("jsonwebtoken");
+// const secretKey = "secetKey";
 
-exports.listen=(req,res)=>{
+module.exports=(req,res)=>{
     res.send("hello")
 }
 
