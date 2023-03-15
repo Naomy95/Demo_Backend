@@ -4,7 +4,7 @@ require('dotenv').config();
 
 // const login = require('./router/loginroute'); 
 const port=process.env.PORT || 5000 
-const home = require('./router/homerouter.js'); 
+const home = require('./router/homerouter'); 
 
 
 const corsOptions ={

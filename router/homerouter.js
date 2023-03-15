@@ -1,8 +1,8 @@
-const { Router } = require('express');
-const app = Router();
+const express = require('express');
+const app = express();
   
 app.get('/', (req, res) => {
-    res.send("Home");
+    res.send("Demo");
 });
   
 module.exports = app;
