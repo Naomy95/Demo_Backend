@@ -1,15 +1,15 @@
-const  Router  = require('express'); 
-const {create,createProfile,listen}=require('../controller/logincontroller')
-const app = Router(); 
+const  express  = require('express'); 
+// const {create,createProfile,listen}=require('../controller/logincontroller')
+const app = express(); 
 
 
-app.use(Router.json());
+app.use(express.json());
 
 app.get('/',listen)
 
-app.post('/login', create)
+// app.post('/login', create)
 
-app.post('/profile', createProfile)
+// app.post('/profile', createProfile)
 
 
   
