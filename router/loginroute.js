@@ -1,15 +1,13 @@
-const  express  = require('express'); 
-const {listen}=require('../controller/logincontroller')
-const app = express(); 
+const { Router } = require('express');
+const {listen,create,createProfile}=require('../controller/logincontroller')
+const app = Router(); 
 
-
-app.use(express.json());
 
 app.get('/',listen)
 
-// app.post('/login', create)
+app.post('/login', create)
 
-// app.post('/profile', createProfile)
+app.post('/profile', createProfile)
 
 
   

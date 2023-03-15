@@ -2,9 +2,9 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
-// const login = require('./router/loginroute'); 
+const login = require('./router/loginroute'); 
 const port=process.env.PORT || 5000 
-const home = require('./router/homerouter'); 
+// const home = require('./router/homerouter'); 
 
 
 const corsOptions ={
@@ -28,7 +28,7 @@ app.use(cors(
 app.use(express.json());
 
 
-app.use(home)
+app.use(login)
 
   
 app.listen(port, () => { 
