@@ -1,3 +1,3 @@
-module.exports = (req, res) => {
-    res.send("Home demo")
+exports.listen = (req, res) => {
+    res.send("Home demo hello")
 };
